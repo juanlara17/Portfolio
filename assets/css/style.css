@@ -19,13 +19,15 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("http://www.suchowskimedia.com/images/revslider/home-slider3.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+  /*background-color: #1d2124;*/
+  /*background-blend-mode: screen;*/
 }
 
 @media (min-width: 1024px) {
@@ -377,6 +379,12 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-me .image img{
+  padding: 0 70px;
+  padding-top: 10px;
+  height: 323px;
+}
+
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
