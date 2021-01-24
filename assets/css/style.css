@@ -19,7 +19,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("http://www.suchowskimedia.com/images/revslider/home-slider3.jpg") top right no-repeat;
+  background: #040404 url(../../assets/img/bg_main2.png) top right no-repeat;
+  /*background: #040404 url("https://www.leiue.com/uploads/2020/02/computer.jpg") top right no-repeat;*/
   background-size: cover;
   left: 0;
   right: 0;
@@ -37,7 +38,7 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #0e6635;
 }
 
 a:hover {
@@ -380,9 +381,10 @@ section .container {
 # About
 --------------------------------------------------------------*/
 .about-me .image img{
-  padding: 0 70px;
+  /*padding: 0 70px;*/
   padding-top: 10px;
   height: 323px;
+  /*width: 300px;*/
 }
 
 .about-me .content h3 {
