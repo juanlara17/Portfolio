@@ -1,0 +1,7 @@
+{
+    "name": "juanfecode/portfolio",
+    "description": "Mi pagina oficial",
+    "require": {
+        "phpmailer/phpmailer": "^6.2"
+    }
+}

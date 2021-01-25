@@ -10,29 +10,29 @@ $mail = new PHPMailer(true);
 
 try {
   //Server settings
-  $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+  $mail->SMTPDebug = true;
   $mail->isSMTP();
-  $mail->Host = 'smtp.gmail.com';
+  $mail->Host = 'smtp.office365.com';
   $mail->SMTPAuth = true;
-  $mail->Username = 'juanlara17@gmail.com';
-  $mail->Password = 'h73sc@PuV[63';
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  $mail->Username = 'juanlara17@hotmail.com';
+  $mail->Password = 'Jesus890418.!';
+  $mail->SMTPSecure = 'STARTTLS';
   $mail->Port = 587;
 
   //Recipients
-  $mail->setFrom('juanlara17@gmail.com', 'JuanFe');
+  $mail->setFrom('juanlara17@hotmail.com', 'JuanFe');
   $mail->addAddress('juanlara17@hotmail.com', 'Juan Lara');
 
   // Content
   $mail->isHTML(true);                                  // Set email format to HTML
   $mail->Subject = 'Here is the subject';
   $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-  $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+//  $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
   $mail->send();
-  echo 'Message has been sent';
+  echo 'Su mensaje fue enviado con exito';
 } catch (Exception $e) {
-  echo "Error al enviar el mensaje";
+  echo "El mensaje no se pudo enviar";
 }
 
 
